@@ -79,6 +79,45 @@ nav a:focus {
   color: var(--color-active);
 }
 
+.tab-home {
+  flex: 1;
+  background: url("./images/hero.jpg") no-repeat top center fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  color: white;
+  width: 70%;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+button {
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border: 0;
+  box-shadow: 0 0 5px 0px black;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: var(--color-accent);
+}
+
 @media (min-width: 600px) {
   .nav-close {
     display: block;
