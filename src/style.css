@@ -118,6 +118,38 @@ button:focus {
   background: var(--color-accent);
 }
 
+.menu {
+  /* width: 90%; */
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card-info {
+  color: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+}
+
+.tab-menu h1 {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 600px) {
   .nav-close {
     display: block;
