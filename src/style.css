@@ -119,7 +119,6 @@ button:focus {
 }
 
 .menu {
-  /* width: 90%; */
   margin: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -141,13 +140,27 @@ button:focus {
   z-index: 1000;
 }
 
-.tab-menu h1 {
+.tab-menu h1,
+.tab-contact h2 {
   text-align: center;
   color: var(--color-primary);
   font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 1rem;
+}
+
+.tab-contact {
+  margin: 0 1rem;
+}
+
+.tab-contact p {
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.tab-contact h2:not(:first-child) {
+  margin-top: 2rem;
 }
 
 @media (min-width: 600px) {
