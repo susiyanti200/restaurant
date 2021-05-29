@@ -18,6 +18,14 @@ const menuContent = generateMenuContent();
 const contactContent = generateContactContent();
 content.append(homeContent);
 
+const homeButton = homeContent.querySelector("button");
+homeButton.addEventListener("click", () => {
+  content.removeChild(content.lastElementChild);
+  content.append(contentList[navList[1]]);
+  toggleActiveNav(navList[1]);
+  navEl.classList.add("nav-close");
+});
+
 const contentList = {
   home: homeContent,
   menu: menuContent,
