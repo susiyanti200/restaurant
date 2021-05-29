@@ -75,6 +75,4 @@ const generateMenuContent = () => {
   return main;
 };
 
-console.log(menuList);
-
 export default generateMenuContent;
